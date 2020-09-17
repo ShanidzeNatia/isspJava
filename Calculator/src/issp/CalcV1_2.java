@@ -7,10 +7,9 @@ public class CalcV1_2 {
     private String formula = "";
     CalcV1_2(){
         int position, n1, n2;
-        System.out.println("Simple Calculator V1.1");
+        System.out.println("Simple Calculator V1.2");
         System.out.print("Enter your math formula: ");
         formula = scanner.next();
-//        System.out.println(formula);
         position = checkOperationSymbol2(formula);
 //        System.out.println(formula.substring(0, position)); // [0, 2)
         n1 = Integer.parseInt(formula.substring(0, position));

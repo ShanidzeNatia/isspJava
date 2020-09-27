@@ -37,12 +37,22 @@ public class TicTacToe {
     }
 
     void replaceX(int number){
-        if(number/3 == 0 ) {
+        /*if(number/3 == 0 ) {
             display[number/3-1][2] = "x";
         }else {
             display[number/3][(number%3)-1] = "x";
             System.out.println(number%3);
 //            display[2][1]
+        }*/
+        
+        // uprimitiulesi solution
+        for (int i=0; i<display.length; i++){
+            for (int j=0; j< display.length; j++){
+                if(display[i][j].equals(Integer.toString(number))){
+                    display[i][j] = "x";
+                    break;
+                }
+            }
         }
     }
 }
